@@ -1,0 +1,6 @@
+data/
+__pycache__/
+.git
+.github
+*.md
+docker-compose.yml
