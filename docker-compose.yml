@@ -1,0 +1,17 @@
+services:
+  spotibrainz:
+    image: alfonsocasadodiez/spotibrainz:latest
+    container_name: spotibrainz
+    restart: unless-stopped
+    ports:
+      - "8888:8888"
+    environment:
+      TZ: UTC              # your timezone, e.g. Europe/Madrid
+      # WEB_PASSWORD: ""   # protect the setup page with a password
+      # SECRET_KEY: ""     # your own long random encryption key instead of the generated one
+    volumes:
+      - ./data:/data       # settings and sync state
+      - keys:/keys         # encryption key, kept apart from ./data
+
+volumes:
+  keys:
