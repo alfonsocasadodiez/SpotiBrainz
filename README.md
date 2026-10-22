@@ -1,4 +1,6 @@
-# SpotiBrainz
+<p align="center">
+  <img src="assets/logo.png" alt="SpotiBrainz" width="480">
+</p>
 
 Copies your [ListenBrainz](https://listenbrainz.org) playlists to Spotify and keeps them up to date, automatically. You set it up once in a web page, then it runs on its own in a small Docker container.
 
